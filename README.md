@@ -25,6 +25,13 @@ images for better visualization. The website is designed to be responsive and de
 <img width="1920" height="940" alt="website-3" src="https://github.com/user-attachments/assets/bf9a3158-ba23-4442-a62d-f270af84b411" />
 <img width="1920" height="951" alt="website-4" src="https://github.com/user-attachments/assets/07aa9ec5-5757-449d-861f-d3c2ba2b7a9a" />
 <img width="1920" height="943" alt="website-5" src="https://github.com/user-attachments/assets/c1f55f69-a407-4718-b76e-fc1350a427aa" />
+<img width="1920" height="945" alt="website-6" src="https://github.com/user-attachments/assets/045283f8-e6c4-4dc1-8b4e-6e0390527b81" />
+<img width="1920" height="951" alt="website-8" src="https://github.com/user-attachments/assets/0496177c-f1fb-42f6-ad4d-317ab919de05" />
+<img width="1920" height="949" alt="website-7" src="https://github.com/user-attachments/assets/1a7ee580-d499-4836-b41b-de4b4228fec0" />
+<img width="1920" height="945" alt="website-9" src="https://github.com/user-attachments/assets/532c8660-c191-4aa1-a504-64e498a72b26" />
+<img width="1920" height="944" alt="website-10" src="https://github.com/user-attachments/assets/3926c95e-87d3-400f-8cfd-59c376f51ee4" />
+<img width="1920" height="954" alt="website-11" src="https://github.com/user-attachments/assets/3cd9ab7b-35bb-492d-8082-43865378bc47" />
+
 
 
 
