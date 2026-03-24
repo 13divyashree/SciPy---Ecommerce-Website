@@ -5,8 +5,7 @@ This project is a frontend e-commerce website developed using HTML, CSS, JavaScr
 dynamically in a user-friendly interface. It includes features such as dynamic product listing, a single product details page when a product is selected, and sliding 
 images for better visualization. The website is designed to be responsive and demonstrates the use of API integration along with core web technologies to create an interactive shopping experience.”
 
-## Live Demo
-[Click here to view the project](http://127.0.0.1:5500/index.html)
+
 
 ## Tools Used
 - HTML
