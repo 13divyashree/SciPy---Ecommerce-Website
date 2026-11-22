@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        .card {
+            height: 60vh;
+
+        }
+
+        .card img {
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+     <!-- body to display -->
+  <nav class="navbar navbar-expand-lg bg-danger-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">SciPy</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Women's Wear</h1>
+        <div class="row womens-products" style="row-gap: 2rem;">
+            <!-- women's wear Cards Load Here -->
+        </div>
+    </div>
+
+    <!-- js part -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const women_wear=document.querySelector('.womens-products')
+
+    women_wear.innerHTML=  "<h2>Loading women's wear...</h2>";
+    
+    (async () => {
+
+            let api_data = await (await fetch("https://fakestoreapi.com/products")).json();
+            console.log(api_data);
+
+
+           //  Find electronics using loop
+            let womens = []; // empty array to store only electronics products
+
+            // Loop through all API data
+            for (const item of api_data) {
+
+                if (item.category === "women's clothing") {
+                    womens.push(item);   // manually store electronics products
+                }
+
+            }
+
+             let output = "";
+
+            for (const product of womens) {
+                output += `
+    <div class="col-3">
+        <div class="card">
+            <img src="${product.image}" class="card-img-top">
+            <div class="card-body">
+                <p class="card-title">${product.title}</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    `;
+            }
+            women_wear.innerHTML = output;
+
+        }) ();
+
+    </script>
+    
+</body>
+</html>

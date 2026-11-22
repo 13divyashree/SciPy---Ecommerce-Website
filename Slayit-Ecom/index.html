@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- navigation bar -->
+     <div id="home"></div>
+     <a href="#home" id="scrollTopBtn" class="scroll-top-btn">⬆️</a>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  bg-danger-subtle">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">SciPy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#electronics">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#menswear">Men's Clothing</a></li>
+                            <li><a class="dropdown-item" href="#womenwear">Women's Clothing</a></li>
+                            <li><a class="dropdown-item" href="#jewellry">Jewelegy0ry</a></li>
+                        </ul>
+                    </li>
+                    <!-- cart -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">🛒Cart</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search" />
+                    <button class="btn btn-outline-successbg-info" type="submit">Search</button>
+                </form>
+
+                <!-- signup modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-light ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign Up
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <input class="form-control mb-3" type="text" placeholder="Enter Fullname "
+                                        name="fullname" required>
+                                    <input class="form-control mb-3" type="text" placeholder="Enter Email "
+                                        name="email" required>
+                                    <input class="form-control mb-3" type="tel" placeholder=" Mobile number "
+                                        name="phone" required>
+                                         <input class="form-control mb-3" type="password" placeholder=" Set password "
+                                        name="password" required>
+                                    <button type="submit" class="btn btn-success">Sign Up</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- login modal -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-light ms-3" data-bs-toggle="modal" data-bs-target="#login">
+                    Login
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+
+                                    <input class="form-control mb-3" type="email" placeholder="Enter Email "
+                                        name="email" required>
+                                    <input class="form-control mb-3" type="password" placeholder=" Enter password "
+                                        name="phone" required>
+                                    <button type="submit" class="btn btn-success">Login</button>
+                                </form>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">New user?</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- image courosel -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+
+                <!-- image carousel -->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1500">
+                            <img src="./Assets/images/electronics.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="./Assets/images/men2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="./Assets/images/women1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="./Assets/images/jewel2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <!--Electronics  -->
+            <div class="col-12 bg-electronics" id="electronics" style="height: 100vh;">
+                <h1 class="text-white ">Electronics</h1>
+                <p class="text-white text-start w-50 m-auto "class="text-justify">Selling digital products, such as ebooks, online courses,
+                    templates, software, graphics, music, and stock media, offers creators high profit margins often
+                    exceeding 90% due to low overhead costs with no inventory, shipping, or supply chain needs. These
+                    intangible items deliver instantly upon purchase via platforms like Shopify, Sellfy, or dedicated
+                    marketplaces, enabling global reach and passive income streams while allowing scalability through
+                    bundles, memberships, or upsells. Popular examples in demand include educational content like
+                    courses on tech skills, design assets for social media, and AI tools, which thrive with effective
+                    marketing via social media, email, SEO, and previews to build trust and combat piracy risks.</p>
+
+                <a href="./electronics.html">
+                    <button class="btn btn-light">View Electronics Products</button>
+                </a>
+
+            </div>
+
+            <!-- men's wear -->
+            <div class="col-12 bg-menswear" id="menswear" style="height: 100vh;">
+                <h1 class="text-white ">Men's wear</h1>
+                <p class="text-white text-start w-50 m-auto mb-3" class="text-justify">Discover the ultimate destination for modern men's
+                    wear at
+                    CodeCart Hub, where cutting-edge style meets unparalleled comfort and versatility for the discerning
+                    gentleman of 2025. Explore our curated collections of athleisure tracksuits crafted from technical,
+                    breathable fabrics that seamlessly transition from gym sessions to street-ready looks, bold shirts
+                    in electric blues and deep greens adorned with geometric prints for standout casual vibes,
+                    retro-inspired wide-leg trousers and vintage denim reimagined with sustainable materials for
+                    effortless cool, and textural layering pieces like chunky knits over suede bombers paired with
+                    corduroy for dramatic, professional edge. </p>
+
+                <a href="./mens-clothing.html">
+                    <button class="btn btn-light m-auto">View Men's wear</button>
+                </a>
+
+            </div>
+            <!-- Women's wear -->
+            <div class="col-12 bg-womenwear" id="womenwear" style="height: 100vh;">
+                <h1 class="text-white ">Women's wear</h1>
+                <p class="text-white text-start w-50 m-auto mb-3" class="text-justify">Discover the ultimate destination for modern men's
+                    wear at
+                    CodeCart Hub, where cutting-edge style meets unparalleled comfort and versatility for the discerning
+                    gentleman of 2025. Explore our curated collections of athleisure tracksuits crafted from technical,
+                    breathable fabrics that seamlessly transition from gym sessions to street-ready looks, bold shirts
+                    in electric blues and deep greens adorned with geometric prints for standout casual vibes,
+                    retro-inspired wide-leg trousers and vintage denim reimagined with sustainable materials for
+                    effortless cool, and textural layering pieces like chunky knits over suede bombers paired with
+                    corduroy for dramatic, professional edge. </p>
+
+                <a href="./womens-clothing.html">
+                    <button class="btn btn-light m-auto">View Women's wear</button>
+                </a>
+
+            </div>
+            <!-- jewellry -->
+             <div class="col-12 bg-jewellry" id="jewellry" style="height: 100vh;">
+                <h1 class="text-white ">Jewellery</h1>
+                <p class="text-white text-start w-50 m-auto mb-3" class="text-justify">Discover the ultimate destination for modern men's
+                    wear at
+                    CodeCart Hub, where cutting-edge style meets unparalleled comfort and versatility for the discerning
+                    gentleman of 2025. Explore our curated collections of athleisure tracksuits crafted from technical,
+                    breathable fabrics that seamlessly transition from gym sessions to street-ready looks, bold shirts
+                    in electric blues and deep greens adorned with geometric prints for standout casual vibes,
+                    retro-inspired wide-leg trousers and vintage denim reimagined with sustainable materials for
+                    effortless cool, and textural layering pieces like chunky knits over suede bombers paired with
+                    corduroy for dramatic, professional edge. </p>
+
+                <a href="./jewellry.html">
+                    <button class="btn btn-light m-auto">View Jewellery</button>
+                </a>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap Js CDN link -->
+     <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+
+
+    </script>   
+</body>
+
+</html>
